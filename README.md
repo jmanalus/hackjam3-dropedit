@@ -39,7 +39,7 @@ Hopefully, you remember some of your Python from 61A. If you've forgotten a bit,
 
 Important things you'll use from 61A:
 
-1. Higher order functions!! Remember how you can pass in functions as parameters to other functions? Well, this will be super useful when we use "callbacks". What is a callback, you may ask? I will answer that a bit later, so don't get too anxious.
+1. Decorators! Remember when we slap ```@main```  or ```@interact``` or ```@trace``` above our ```def```? This is a use of higher order functions, where we basically get to add some hidden functionality to whatever function we want. We'll use this in the future to create our web server.
 2. Mutable data structures (i.e. lists and dictionaries). As you'll soon learn, Dropbox looovvvvvesss to return data in the form of dictionaries.
 3. Dot notation. Remember when you did ```words.append("hello")``` and other list operations? Well that period indicates that we're doing an operation specific to the words list. You'll be doing a lot of operations on objects with this "dot notation."
 
