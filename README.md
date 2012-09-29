@@ -26,7 +26,7 @@ Now that you're pumped up to get started, here are some quick tips for when you 
  <td><img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/558869_10150602046071008_351142091_n.jpg" width="200" height="auto"></td>
  <td><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/378931_10150517864370407_585653093_n.jpg" width="200" height="auto"></td>
  <td><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-snc7/392436_3656152635417_1850008030_n.jpg" width="200" height="auto"></td>
- </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td>Vaishaal Shankar<td></td></tr></table>
+ </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td><td>Vaishaal Shankar</td></tr></table>
 
 You'll need to install Python (3.X please!). If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
 
