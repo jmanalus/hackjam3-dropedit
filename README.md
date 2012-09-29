@@ -30,7 +30,7 @@ Now that you're pumped up to get started, here are some quick tips for when you 
  <td><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-snc7/392436_3656152635417_1850008030_n.jpg" width="200" height="auto"></td>
  </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td><td>Vaishaal Shankar</td></tr></table>
 
-You'll need to install Python (3.X please!). If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
+You'll need to install Python (both 2.X and 3.X please!). If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
 
 ## 1. Learn Python
 
@@ -45,7 +45,7 @@ Important things you'll use from 61A:
 
 ## 2. Learn Bottle (web server)
 
-Bottle.py is a library for Python to make websites _extremely_ quickly. Install it (download "bottle.py" by clicking the link or using wget), and then write a Hello World from the [Bottle tutorial](http://bottlepy.org/docs/dev/tutorial.html).
+Bottle.py is a library for Python to make websites _extremely_ quickly. Install it (download "bottle.py" by clicking the link or using wget), and then write a Hello World from the [Bottle tutorial](http://bottlepy.org/docs/dev/tutorial.html). Note that the Hello World only works with Python3, so in this example, please use Python3.
 
 ## 3. Add Dropbox authentication
 
@@ -53,13 +53,13 @@ Dropbox is a wonderful company for any number of reasons - not least of which be
 
 1. Dropbox keeps a record of your app to ensure security. You'll first need to create an app with Dropbox in order to use their services. Go [here](https://www.dropbox.com/developers/apps) to create your app on Dropbox.
 2. You'll need the Dropbox Python library. I included it in the Github files to make your life a bit easier, but feel free to install it yourself using pip or from Dropbox's website if you want the satisfaction of doing everything yourself.
-3. Check out the example that Dropbox uses, either in the zip that you downloaded from Dropbox, or from the dropbox-examples folder from this Github. Open up web_upload_example.py and put in the two authentication keys Dropbox gave you - the app_key and the app_secret. Run their demo using `python web_upload_example.py` and see what functionality it provides. Now, take a look at the actual file, and try to figure out what Dropbox did to build their application. Parts of this example are actually going to form the first pages of your application, so pay special attention to the login page!
+3. Check out the example that Dropbox uses, either in the zip that you downloaded from Dropbox, or from the dropbox-examples folder from this Github. Open up web_upload_example.py and put in the two authentication keys Dropbox gave you - the app_key and the app_secret. Run their demo using `python web_upload_example.py` and see what functionality it provides. Note that you need to use Python 2 for this. Now, take a look at the actual file, and try to figure out what Dropbox did to build their application. Parts of this example are actually going to form the first pages of your application, so pay special attention to the login page!
 
 ## 4. Start Building Your Web App!
 
 Alright, so here's where we get down and dirty and actually start to build your web app. You're gonna have to start writing some of your own code here. Also, it's gonna start becoming a bit more free form, so feel free to try things that might not work, make mistakes, and generally be willing to try things until they work. You're discovering how to build stuff, so expect that you'll get a bit frustrated sometimes, but just keep on going, because the end result is gonna be awesome. Don't give up!
 
-Start with a new version of the bottle.py Hello World application. Just to make discussion easier, call this file `app.py`. Modify it to be a web page with a single link, at first just to Dropbox's homepage. Make sure this web page works fine by running the Bottle server and visiting the web page. Now, just add one thing before continuing. Add an `import dropbox` line at the top of `app.py`, and make sure it still works. You'll need the Dropbox library installed for this to work. 
+Start with a new version of the bottle.py Hello World application (this one requires Python2). Just to make discussion easier, call this file `app.py`. Modify it to be a web page with a single link, at first just to Dropbox's homepage. Make sure this web page works fine by running the Bottle server and visiting the web page. Now, just add one thing before continuing. Add an `import dropbox` line at the top of `app.py`, and make sure it still works. You'll need the Dropbox library installed for this to work. 
 
 Once you've done that, start looking at how Dropbox's example website does the authentication on it's `/login` page. You're going to need to add all the same features to your bottle application. A few hints: The host is the base of the URL you're on. For the URL `http://www.dropbox.com/myfile`, the host is `www.dropbox.com`. Notice for most of your bottle development, your host has probably been `localhost:8080` (or maybe some other port). The dropbox example finds the name of the host using `self.host`. In bottle, you'll use `bottle.request.headers['host']`. I'd also copy the `get_session()` and `get_client()` functions into your python file. It will make your life a bit easier.
 
