@@ -152,7 +152,7 @@ Brainstorm what else you could do with this project, or what other things you co
 
 # Congratulations!
 
-I hope you had a ton of fun. I'd love to hear how it went - send me a message at kespindler -at- gmail. Also, I'd genuinely appreciate your feedback. Let me know what works and what doesn't, and I'll try to make it better for future first time hackers!
+I hope you had a ton of fun. I'd love to hear how it went - send team@ an email, telling us how amazing your first hack was. Also, I'd genuinely appreciate your feedback for this tutorial. Let me know what works and what doesn't, and I'll try to make it better for future first time hackers!
 
 # Happy Hacking!
 
