@@ -1,4 +1,6 @@
-# Welcome To HackJam2.0
+# Welcome To HackJam3.0
+
+## Thanks to Kurt Spindler for this AWESOME write up
 
 This is a Your First Hack (YFH) project. It's a full proposal for what to do during your first hackathon - from start to finish. You'll build your very first web application. And not a dumb one either, but a web application that has some seriously awesome functionality, and you could absolutely use day-to-day. This YFH is to create a web-based Dropbox text editor. When you finish this project, you'll have:
 
