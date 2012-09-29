@@ -25,9 +25,10 @@ Now that you're pumped up to get started, here are some quick tips for when you 
  <td><img src="http://inst.eecs.berkeley.edu/~cs61a-rb/sharad.jpg" width="200" height="auto"></td>
  <td><img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/558869_10150602046071008_351142091_n.jpg" width="200" height="auto"></td>
  <td><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/378931_10150517864370407_585653093_n.jpg" width="200" height="auto"></td>
- </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td></tr></table>
+ <td><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-snc7/392436_3656152635417_1850008030_n.jpg" width="200" height="auto"></td>
+ </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td>Vaishaal Shankar<td></td></tr></table>
 
-You'll need to install Python. If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
+You'll need to install Python (3.X please!). If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
 
 ## 1. Learn Python
 
@@ -35,7 +36,7 @@ Hopefully, you remember some of your Python from 61A. If you've forgotten a bit,
 
 ## 2. Learn Bottle (web server)
 
-Bottle.py is a library for Python to make websites _extremely_ quickly. Install it, and then write a Hello World from the [Bottle tutorial](http://bottlepy.org/docs/dev/tutorial.html).
+Bottle.py is a library for Python to make websites _extremely_ quickly. Install it (download "bottle.py" by clicking the link or using wget), and then write a Hello World from the [Bottle tutorial](http://bottlepy.org/docs/dev/tutorial.html).
 
 ## 3. Add Dropbox authentication
 
