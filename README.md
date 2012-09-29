@@ -36,6 +36,12 @@ You'll need to install Python (3.X please!). If you've never used Python before 
 
 Hopefully, you remember some of your Python from 61A. If you've forgotten a bit, head over to the [official Python tutorial](http://docs.python.org/tutorial/) (It's amazing!), and refresh your memory.
 
+
+Important things you'll use from 61A:
+1. Higher order functions!! Remember how you can pass in functions as parameters to other functions? Well, this will be super useful when we use "callbacks". What is a callback, you may ask? I will answer that a bit later, so don't get too anxious.
+2. Mutable data structures (i.e. lists and dictionaries). As you'll soon learn, Dropbox looovvvvvesss to return data in the form of dictionaries.
+3. Dot notation. Remember when you did ```words.append("hello")```? Well that period indicates that we're doing an operation specific to the words list. You'll be doing a lot of operations on objects with this "dot notation."
+
 ## 2. Learn Bottle (web server)
 
 Bottle.py is a library for Python to make websites _extremely_ quickly. Install it (download "bottle.py" by clicking the link or using wget), and then write a Hello World from the [Bottle tutorial](http://bottlepy.org/docs/dev/tutorial.html).
@@ -90,7 +96,7 @@ First, we're going to need some data to populate the page with. Within the funct
     client = get_client(access_token) #get_client, the function from the Dropbox example code
     context = client.metadata('.') #client.metadata is the Dropbox library call to get the list of files in the directory. You should look at the documentation of the Dropbox Python library to confirm this.
 
-For now, just have this webpage return `str(context)` and confirm that you're getting the data correctly. If you are, congradulations. Get another big pat on the back, and keep going!
+For now, just have this webpage return `str(context)` and confirm that you're getting the data correctly. If you are, congratulations. Get another big pat on the back, and keep going!
 
 You need to present this data in a more readable fashion - this is where the templates come in. Make a template `viewfiles.mustache`. It should have a mustache section (remember, in mustache, a section is a group that gets repeated or otherwise treated in a special way.) that will display something for every file within a directory. My version displays the name and the date modified, and wraps it within a HTML table. You should look at the keys of the context dictionary to figure out the names of variables you can use in your template.
 
