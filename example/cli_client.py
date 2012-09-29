@@ -3,7 +3,6 @@ import locale
 import os
 import pprint
 import shlex
-import sys
 
 from dropbox import client, rest, session
 
@@ -11,7 +10,7 @@ from dropbox import client, rest, session
 # You can find these at http://www.dropbox.com/developers/apps
 APP_KEY = ''
 APP_SECRET = ''
-ACCESS_TYPE = 'app_folder' # should be 'dropbox' or 'app_folder' as configured for your app
+ACCESS_TYPE = 'app_folder'  # should be 'dropbox' or 'app_folder' as configured for your app
 
 def command(login_required=True):
     """a decorator for handling authentication and exceptions"""
@@ -148,9 +147,16 @@ class DropboxTerm(cmd.Cmd):
         Examples:
         Dropbox> put ~/test.txt dropbox-copy-test.txt
         """
-        from_file = open(os.path.expanduser(from_path))
+        from_file = open(os.path.expanduser(from_path), "rb")
 
         self.api_client.put_file(self.current_path + "/" + to_path, from_file)
+
+    @command()
+    def do_search(self, string):
+        """Search Dropbox for filenames containing the given string."""
+        results = self.api_client.search(self.current_path, string)
+        for r in results:
+            self.stdout.write("%s\n" % r['path'])
 
     @command(login_required=False)
     def do_help(self):
