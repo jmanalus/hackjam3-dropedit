@@ -21,10 +21,10 @@ Now that you're pumped up to get started, here are some quick tips for when you 
  - Ask Google. It has the right answers a lot of the time.
  - If you've asked several people and are getting stuck, consider asking one of these awesome people for help:
  <table><tr><td><img src="https://github.com/sharadmv/hackjam3-dropedit.git" width="200" height="auto"></td>
- <td><img src="http://a2.sphotos.ak.fbcdn.net/hphotos-ak-snc7/305492_10150364954364573_516544572_7885545_1515202994_n.jpg" width="200" height="auto"></td>
+ <td><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/378931_10150517864370407_585653093_n.jpg" width="200" height="auto"></td>
  <td><img src="http://inst.eecs.berkeley.edu/~cs61a-rb/sharad.jpg" width="200" height="auto"></td>
  <td><img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/558869_10150602046071008_351142091_n.jpg" width="200" height="auto"></td>
- <td><img src="http://inst.eecs.berkeley.edu/~cs61a-rb/sharad.jpg" width="200" height="auto"></td>
+ <td><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/378931_10150517864370407_585653093_n.jpg" width="200" height="auto"></td>
  </tr><tr><td>Richie Zeng</td><td>Nelson Zhang</td><td>Sharad Vikram</td><td>Peter Gao</td><td>Steve Yadlowsky</td></tr></table>
 
 You'll need to install Python. If you've never used Python before and you've had something missing in your life, Python is probably the answer. If so, go download and install Python. That's step 1 for the project. Go!
